@@ -1,0 +1,23 @@
+* {
+    font-family: Poppins;
+}
+.Carrousel {
+    width: 100%;
+    height: 400px;
+}
+
+.container {
+    padding: 20px 0px;
+}
+
+.judul {
+    text-align: center;
+    padding: 10px 0px;
+}
+
+#load {
+    margin-bottom: 10px;
+}
+nav {
+    background-color:#EFF7F2;
+}
