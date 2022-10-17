@@ -1,0 +1,28 @@
+.image >img{
+    width: 700px;
+    height: 700px;
+}
+.container{
+    display: flex;
+}
+input[type=text] {
+    width: 500px;
+    padding: 10px 15px;
+    color:darkgray;
+    font-size: 15px;
+    display: inline block;
+}
+.vield{
+    display: flex;
+    flex-direction: column;
+}
+.text{
+    padding: 200px 90px;
+}
+button{
+    background-color:dodgerblue;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    padding: 10px 30px;
+}
