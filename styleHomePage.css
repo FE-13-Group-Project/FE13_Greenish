@@ -36,7 +36,7 @@ nav {
 a {
     font-size: 20px;
 }
-.banner{
+/* .banner{
     overflow: hidden;
     max-width: 100%;
     position: relative;
@@ -82,8 +82,12 @@ color: white;
 border: none;
 text-decoration: none;
 padding: 10px 20px;
-}
+} */
 
+.d-block {
+    max-width: 100%;
+    height: 70vh;
+}
 .navbar-style {
     padding-top: 5px;
 }
