@@ -6,12 +6,11 @@ function getData(key) {
         return res.json()
     }).then((res) => {
         res.map((item, index) => {
-            console.log(item.nameEvent, index);
             let col = document.createElement("div")
             col.className = "col-auto"
             col.id = index
             let link = document.createElement("a")
-            link.href = "#"
+            link.href = `javascript:goDetail(${item.id});`
             link.className = "link"
             let card = document.createElement("div")
             card.className = "card"
@@ -57,3 +56,18 @@ function getData(key) {
 
 }
 getData(key)
+document.getElementById("form").addEventListener('submit',(eve)=>{
+    eve.preventDefault()
+    while (container.firstChild){
+        container.removeChild(container.firstChild)
+    }
+    let value = document.getElementById("inputan").value
+    let search_key = `https://634c991cf5d2cc648e90dc64.mockapi.io/gre/1/event?nameEvent=${value}`
+    getData(search_key)
+    document.getElementById("inputan").value = ""
+})
+
+function goDetail(x) {
+    localStorage.setItem("index",x)
+    window.location.href = "detail.html"
+}

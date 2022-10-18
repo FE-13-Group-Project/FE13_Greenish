@@ -7,8 +7,9 @@
   scroll-behavior: smooth;
 }
 #body{
-    background-color:#E2E0FF ;
+    background-color: #EFF7F2;
 }
+
 .banner{
   overflow: hidden;
   max-width: 100%;
@@ -109,4 +110,18 @@
   
   font-size: 15px;
   font-weight: 300;
+}
+.navbar-style {
+  padding-top: 5px;
+}
+@media only screen and (max-width: 768px) {
+  .boxtext >p {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  nav {
+      background-color:#EFF7F2;
+      padding: 0px 0px;
+  }
 }
