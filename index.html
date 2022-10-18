@@ -13,7 +13,9 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light ">
+
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">GREENISH</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,36 +29,51 @@
             </div>
           </div>
         </div>
+      </nav> -->
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">GREENISH</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item navbar-style">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item navbar-style">
+                <a class="nav-link" href="event.html">Event</a>
+              </li>
+              <li class="nav-item navbar-style">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png" width="40" height="40" class="rounded-circle">
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                  <li><a class="dropdown-item" href="#">Edit Profil</a></li>
+                  <li><a class="dropdown-item" href="#">Log Out</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
 
 
       <!-- Carrousel -->
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <div class="container-fluid banner">
+        <div class="container-fluid overlay-image"></div>
+        <div class="container-fluid boxtext">
+            <h2>Mari Ikut Terlibat Bersama !</h2>
+            <p>Disini kamu bisa ikut event event yang kami tampung untuk kamu agar bisa ikut dengan teman teman lain
+                dalam melestarikan bumi kita.</p>
+            <a href="event.html">jelajahi</a>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://res.cloudinary.com/dk55ik2ah/image/upload/v1665975213/martin-bennie-MbbT3AXDcW8-unsplash_mq1l7j.jpg" class="Carrousel" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="https://www.prindonesia.co/timthumb.php?src=https://static.prindonesia.co.id/upload/20200627034618ilustrasi-komunikasi_lingkungan-twitter.jpg&w=750" class="Carrousel" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNcSejlJG3N_XiVJ72r-EKhdMLJQa0MKml1A&usqp=CAU" class="Carrousel" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+    </div>
 
       <!-- Content -->
 
@@ -64,7 +81,7 @@
         <h1 class="judul">Event</h1>
         <div id="content-event"></div>
       </div>
-      <a href=""><center><button type="button" class="btn btn-primary" id="load">Load More</button></center></a>
+      <a href="event.html"><center><button type="button" class="btn btn-primary" id="load">Load More</button></center></a>
 
 
       <footer class="bg-dark text-center text-white" style="margin-top: 100px;" >
