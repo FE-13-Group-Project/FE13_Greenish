@@ -11,36 +11,57 @@
 </head>
 
 <body id="body">
-    <nav class="navbar navbar-expand-lg navbar-light ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding-right: 80px;background-color:#EFF7F2;">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">GREENISH</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ms-auto">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              <a class="nav-link" href="#">Event</a>
-              <a class="nav-link" href="#">About Us</a>
+            <a class="navbar-brand" href="index.html">GREENISH</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item navbar-style">
+                        <a class="nav-link active" aria-current="page" href="index.html"
+                            style="font-size:20px ;">Home</a>
+                    </li>
+                    <li class="nav-item navbar-style">
+                        <a class="nav-link" href="event.html" style="font-size:20px ;">Event</a>
+                    </li>
+                    <li class="nav-item navbar-style">
+                        <a class="nav-link" href="#" style="font-size:20px ;">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png" width="40"
+                                height="40" class="rounded-circle">
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#" style="font-size:20px ;">Dashboard</a></li>
+                            <li><a class="dropdown-item" href="#" style="font-size:20px ;">Edit Profil</a></li>
+                            <li><a class="dropdown-item" href="#" style="font-size:20px ;">Log Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-          </div>
         </div>
-      </nav>
+    </nav>
     <div class="container-fluid banner">
         <div class="container-fluid overlay-image"></div>
         <div class="container-fluid boxtext">
-            <h2>Mari Ikut Terlibat Bersama !</h2>
-            <p>Disini kamu bisa ikut event event yang kami tampung untuk kamu agar bisa ikut dengan teman teman lain
-                dalam melestarikan bumi kita.</p>
+            <h1>Ambil Peranmu Untuk Lindungi Bumi</h1>
+            <h2>kami percaya bahwa dukungan masyarakat adalah kunci dari keberhasilan Kampanye</h2>
+            <p>Disini kamu bisa ikut event event yang kami tampung untuk kamu agar bisa ikut dengan teman teman lainnya
+                dalam ikut mendukung, berpartisipasi dalam melestarikan bumi kita.</p>
             <a href="#rownya">jelajahi</a>
         </div>
     </div>
     <div class="container search">
         <h3>cari event favoritmu disini</h3>
         <div class="container d-flex align-items-center " style="width:fit-content ;">
-            <form class="d-flex" role="search">
+            <form class="d-flex" role="search" id="form">
                 <input class="form-control me-2 inpute" type="search" placeholder="Ayo jelajahi event !"
-                    aria-label="Search">
+                    aria-label="Search" id="inputan">
                 <button class="btn btn-outline-success" type="submit">Cari</button>
             </form>
         </div>
@@ -76,7 +97,7 @@
             </div>
         </div>
     </div>
-    <footer class="bg-dark text-center text-white" style="margin-top: 100px;" >
+    <footer class="bg-dark text-center text-white" style="margin-top: 100px;">
         <!-- Grid container -->
         <div class="container p-4">
             <!-- Section: Social media -->
