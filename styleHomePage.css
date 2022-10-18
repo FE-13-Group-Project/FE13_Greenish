@@ -1,9 +1,12 @@
 * {
-    font-family: Poppins;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
 }
-.Carrousel {
-    width: 100%;
-    height: 400px;
+body {
+    background-color: #EFF7F2;
 }
 
 .container {
@@ -20,4 +23,74 @@
 }
 nav {
     background-color:#EFF7F2;
+    padding-right: 80px;
+}
+.bg-custom-1 {
+    background-color: #85144b;
+  }
+  
+  .bg-custom-2 {
+  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  }
+
+a {
+    font-size: 20px;
+}
+.banner{
+    overflow: hidden;
+    max-width: 100%;
+    position: relative;
+    height: 40rem;
+    background-color: black;
+  }
+.overlay-image {
+    max-width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1618477461853-cf6ed80faba5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZW52aXJvbm1lbnRhbCUyMHN1c3RhaW5hYmlsaXR5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+    position: absolute;
+    height: 40rem;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.3;
+}
+.boxtext{
+    position: absolute;
+    color: white;
+    bottom: 90px;
+    left: 10px;
+    max-width: 800px;
+}
+.boxtext h2{
+    font-size: 24px;
+    font-weight: 600;
+}
+.boxtext p{
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.boxtext a {
+font-size: 18px;
+font-weight: 400;
+border-radius: 10px;
+background-color: #70c174;
+color: white;
+border: none;
+text-decoration: none;
+padding: 10px 20px;
+}
+
+.navbar-style {
+    padding-top: 5px;
+}
+
+@media (max-width: 576px) {
+    nav {
+        background-color:#EFF7F2;
+        padding: 0px 0px;
+    }
 }
