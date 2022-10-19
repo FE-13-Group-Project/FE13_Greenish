@@ -1,0 +1,67 @@
+.image >img{
+    width: 500px;
+    height: 600px;
+    margin: 10px;
+}
+.container{
+    display: flex;
+}
+input[type=text] {
+    width: 500px;
+    padding: 10px 15px;
+    color:darkgray;
+    font-size: 15px;
+    display: inline block;
+}
+.vield{
+    display: flex;
+    flex-direction: column;
+}
+.text{
+    padding: 100px 90px;
+}
+button{
+    background-color:dodgerblue;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    text-align: left;
+    margin: 10px 50px;
+}
+.content > label{
+    padding-bottom: 10px;
+}
+input[type=text] {
+    width: 500px;
+    padding: 10px 15px;
+    color:darkgray;
+    font-size: 15px;
+}
+.container > h1{
+    text-align: center;
+}
+.container > p{
+    padding-bottom: 30px;
+}
+
+button{
+    background-color:dodgerblue;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px
+}
+#hasil > p {
+    padding-top: 20px;
+}
+@media (max-width: 576px){
+    .image{
+        display: none;
+    }
+}
