@@ -5,12 +5,19 @@ if(localStorage.getItem("indexLogin")== 0){
   document.getElementById("edit").style.display ="none"
   document.getElementById("log").style.display ="none"
 }
-if (localStorage.getItem("roleUser") == 1) {
+if (localStorage.getItem('roleUser')) {
+  if (localStorage.getItem("roleUser") == 1) {
+    document.getElementById("addEvent").style.display="none"
+  }
+}else{
   document.getElementById("addEvent").style.display="none"
 }
+
+
 function signOut() {
   localStorage.setItem("indexLogin",1)
   window.location.href ="loginPage.html"
+  localStorage.removeItem('roleUser')
 }
 let contentItem = document.getElementById("content-event");
 let getEvent = async () => {
@@ -19,9 +26,8 @@ let getEvent = async () => {
     );
     let eventTampil = await response.json();
     let dataEvent = eventTampil;
-    console.log(dataEvent);
+
     dataEvent.slice(0, 3).forEach((item) => {
-        console.log(item);
       contentItem.innerHTML += `<div class="card mb-3" style="max-width: 100%;">
       <div class="row g-0">
         <div class="col-md-4">
