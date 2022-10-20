@@ -1,39 +1,37 @@
 * {
+    padding: 0;
+    margin: 0;
     font-family: "Poppins", sans-serif;
     text-decoration: none;
     scroll-behavior: smooth;
-}
+  }
 body {
     background-color: #eff7f2;
   }
-.image >img{
-    width: 700px;
-    height: 700px;
-}
-.container{
-    display: flex;
-}
-input[type=text] {
-    width: 500px;
-    padding: 10px 15px;
-    color:darkgray;
-    font-size: 15px;
-    display: inline block;
-}
-.vield{
-    display: flex;
-    flex-direction: column;
-}
-.text{
-    padding: 200px 90px;
-}
-button{
-    background-color:dodgerblue;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    padding: 10px 30px;
-}
+  .row {
+    background-color: white;
+    border-radius: 25px;
+    margin: 2% 0%;
+  }
+  .image > img {
+    max-width: 100%;
+    height: 50vh;
+    padding-bottom: 10px;
+    border-radius: 25px;
+    /* margin: 10px; */
+  }
+  #form {
+    padding-bottom: 2%;
+  }
+  #judul {
+    padding: 10px;
+  }
+  #content1 {
+    margin-top: 100px;
+    padding-bottom: 50px;
+    
+  }
+
 .ask {
     text-align: center;
     padding-bottom: 20px;
@@ -41,3 +39,17 @@ button{
 .switch {
     text-decoration: none;
 }
+
+@media (max-width: 576px) {
+    img {
+      display: none;
+
+    }
+    .image > img {
+      max-width: 100%;
+      height: 40vh;
+      padding-bottom: 10px;
+      border-radius: 25px;
+    }
+    
+  }
