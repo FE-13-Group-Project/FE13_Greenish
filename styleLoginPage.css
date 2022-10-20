@@ -1,3 +1,11 @@
+* {
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #eff7f2;
+  }
 .image >img{
     width: 700px;
     height: 700px;
@@ -25,4 +33,11 @@ button{
     padding: 5px 10px;
     border-radius: 5px;
     padding: 10px 30px;
+}
+.ask {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+.switch {
+    text-decoration: none;
 }

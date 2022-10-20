@@ -5,6 +5,9 @@
     text-decoration: none;
     scroll-behavior: smooth;
 }
+body {
+    background-color: #EFF7F2;
+}
 .navbar-style {
     padding-top: 5px;
 }
