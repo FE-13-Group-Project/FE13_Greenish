@@ -12,15 +12,19 @@ document.getElementById("formulir").addEventListener('submit', (eve) => {
         }).then((res) => {
             let ketemu = false;
             let role;
+            let id;
+
             res.map((item) => {
                 if (item.email === gmail && item.password === pass) {
                     ketemu = true
                     role = item.role
+                    id = item.id
                 }
             })
             if (ketemu === true) {
                 localStorage.setItem("indexLogin", 0)
                 localStorage.setItem("roleUser", role)
+                localStorage.setItem("idUser", id)
                 window.location.href = "index.html"
                 document.getElementById("username").value = ""
                 document.getElementById("password").value = ""

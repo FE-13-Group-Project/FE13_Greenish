@@ -156,3 +156,12 @@
         font-size: 12px;
     }
   }
+  .navbar-style {
+    padding-top: 5px;
+  }
+  @media (max-width: 576px) {
+    nav {
+        background-color:#EFF7F2;
+        padding: 0px 0px;
+    }
+  }

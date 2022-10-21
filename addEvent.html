@@ -72,7 +72,7 @@
     </div> -->
     <div class="container">
         <h1>Form Add Event</h1>
-    <form>
+    <form id="form">
         <div class="mb-3">
             <label for="nama-event" class="form-label">Nama Event</label>
             <input type="text" class="form-control" id="nama-event" placeholder="masukkan nama event">
@@ -86,8 +86,12 @@
             <input type="text" class="form-control" id="organizer" placeholder="Masukkan nama organizer">
           </div>
           <div class="mb-3">
-            <label for="cp" class="form-label">CP</label>
-            <input type="text" class="form-control" id="cp" placeholder="Masukkan nama CP">
+            <label for="cp" class="form-label">PIC</label>
+            <input type="text" class="form-control" id="pic" placeholder="Masukkan nama pic acara">
+          </div>
+          <div class="mb-3">
+            <label for="cp" class="form-label">CP PIC</label>
+            <input type="number" class="form-control" id="cp" placeholder="Masukkan telp PIC">
           </div>
           <div class="mb-3">
             <label for="status" class="form-label">Status</label>
@@ -96,6 +100,10 @@
           <div class="mb-3">
             <label for="location-event" class="form-label">Location Event</label>
             <input type="text" class="form-control" id="location-event" placeholder="Masukkan lokasi event">
+          </div>
+          <div class="mb-3">
+            <label for="tanggal">Waktu Pelakasanaan</label>
+            <input type="date" id="tanggal" name="tanggal" class="form-control" placeholder="Masukkan waktu event">
           </div>
           <div class="mb-3">
             <label for="max-person" class="form-label">Max person</label>

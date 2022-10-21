@@ -27,6 +27,9 @@
                     <li class="nav-item navbar-style">
                         <a class="nav-link" href="event.html" style="font-size:20px ;">Event</a>
                     </li>
+                    <li class="nav-item navbar-style" id="addEvent" >
+                        <a class="nav-link" href="addEvent.html" style="font-size: 20px;">Add Event</a>
+                    </li>
                     <li class="nav-item navbar-style">
                         <a class="nav-link" href="#" style="font-size:20px ;">About Us</a>
                     </li>
@@ -37,9 +40,10 @@
                                 height="40" class="rounded-circle">
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#" style="font-size:20px ;">Dashboard</a></li>
-                            <li><a class="dropdown-item" href="#" style="font-size:20px ;">Edit Profil</a></li>
-                            <li><a class="dropdown-item" href="#" style="font-size:20px ;">Log Out</a></li>
+                            <li id="login"><a class="dropdown-item" href="loginPage.html">Login / register</a></li>
+                            <li id="dash"><a class="dropdown-item" href="#">Dashboard</a></li>
+                            <li id="edit"><a class="dropdown-item" href="#">Edit Profil</a></li>
+                            <li id="log"><a class="dropdown-item" href="#" onclick="signOut()">Log Out</a></li>
                         </ul>
                     </li>
                 </ul>

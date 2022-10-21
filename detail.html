@@ -12,6 +12,45 @@
 </head>
 
 <body id="body">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding-right: 80px;background-color:#EFF7F2;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">GREENISH</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item navbar-style">
+                        <a class="nav-link active" aria-current="page" href="index.html"
+                            style="font-size:20px ;">Home</a>
+                    </li>
+                    <li class="nav-item navbar-style">
+                        <a class="nav-link" href="event.html" style="font-size:20px ;">Event</a>
+                    </li>
+                    <li class="nav-item navbar-style" id="addEvent" >
+                        <a class="nav-link" href="addEvent.html" style="font-size: 20px;">Add Event</a>
+                    </li>
+                    <li class="nav-item navbar-style">
+                        <a class="nav-link" href="#" style="font-size:20px ;">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png" width="40"
+                                height="40" class="rounded-circle">
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li id="login"><a class="dropdown-item" href="loginPage.html">Login / register</a></li>
+                            <li id="dash"><a class="dropdown-item" href="#">Dashboard</a></li>
+                            <li id="edit"><a class="dropdown-item" href="#">Edit Profil</a></li>
+                            <li id="log"><a class="dropdown-item" href="#" onclick="signOut()">Log Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div class="container-fluid banner">
         <div id="image" class="overlay-image">
         </div>
@@ -53,7 +92,7 @@
                 <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar1" class="avatar1">
                 <div class="contact">
                     <p id="pc"></p>
-                    <p id="no">0895360965318</p>
+                    <p id="no"></p>
                 </div>
             </div>
         </div>
@@ -89,23 +128,23 @@
     <section>
         <h2 style="text-align:center;margin-top: 30px;">Ayo daftarkan dirimu sekarang</h2>
         <div class="container formDaftar">
-            <div class="overlay" >
+            <div class="overlay" id="blocking">
                 <div class="textBox">
                     <h1>Login dulu</h1>
                 </div>
             </div>
-            <form>
+            <form id="form">
                 <!-- 2 column grid layout with text inputs for the first and last names -->
                 <div class="row mb-4">
                   <div class="col">
                     <div class="form-outline">
-                      <input type="text" id="form6Example1" class="form-control" disabled />
+                      <input type="text" id="fname" class="form-control" disabled />
                       <label class="form-label" for="form6Example1">First name</label>
                     </div>
                   </div>
                   <div class="col">
                     <div class="form-outline">
-                      <input type="text" id="form6Example2" class="form-control" disabled />
+                      <input type="text" id="lname" class="form-control" disabled />
                       <label class="form-label" for="form6Example2">Last name</label>
                     </div>
                   </div>
@@ -113,19 +152,19 @@
               
                 <!-- Text input -->
                 <div class="form-outline mb-4">
-                  <input type="text" id="form6Example4" class="form-control" />
+                  <input type="text" id="address" class="form-control" />
                   <label class="form-label" for="form6Example4">Address</label>
                 </div>
               
                 <!-- Email input -->
                 <div class="form-outline mb-4">
-                  <input type="email" id="form6Example5" class="form-control" disabled />
+                  <input type="email" id="email" class="form-control" disabled />
                   <label class="form-label" for="form6Example5">Email</label>
                 </div>
               
                 <!-- Number input -->
                 <div class="form-outline mb-4">
-                  <input type="number" id="form6Example6" class="form-control" />
+                  <input type="number" id="phone" class="form-control" />
                   <label class="form-label" for="form6Example6">Phone</label>
                 </div>
                 <!-- Submit button -->

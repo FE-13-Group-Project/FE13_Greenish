@@ -1,6 +1,20 @@
 const key = "https://634c991cf5d2cc648e90dc64.mockapi.io/gre/1/event"
 let container = document.getElementById("rownya")
-
+if(localStorage.getItem("indexLogin")== 0){
+    document.getElementById("login").style.display ="none"
+  }else{
+    document.getElementById("dash").style.display ="none"
+    document.getElementById("edit").style.display ="none"
+    document.getElementById("log").style.display ="none"
+  }
+  if (localStorage.getItem('roleUser')) {
+    if (localStorage.getItem("roleUser") == 1) {
+      document.getElementById("addEvent").style.display="none"
+    }
+  }else{
+    document.getElementById("addEvent").style.display="none"
+  }
+  
 function getData(key) {
     fetch(key).then((res) => {
         return res.json()
@@ -71,3 +85,8 @@ function goDetail(x) {
     localStorage.setItem("index",x)
     window.location.href = "detail.html"
 }
+function signOut() {
+    localStorage.setItem("indexLogin",1)
+    window.location.href ="loginPage.html"
+    localStorage.removeItem('roleUser')
+  } 
