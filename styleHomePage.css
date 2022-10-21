@@ -9,6 +9,7 @@ body {
     background-color: #EFF7F2;
 }
 
+
 .container {
     padding: 20px 0px;
 }
@@ -36,58 +37,15 @@ nav {
 a {
     font-size: 20px;
 }
-/* .banner{
-    overflow: hidden;
-    max-width: 100%;
-    position: relative;
-    height: 40rem;
-    background-color: black;
-  }
-.overlay-image {
-    max-width: 100%;
-    background-image: url("https://images.unsplash.com/photo-1618477461853-cf6ed80faba5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZW52aXJvbm1lbnRhbCUyMHN1c3RhaW5hYmlsaXR5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
-    position: absolute;
-    height: 40rem;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-position: center;
-    background-size: cover;
-    opacity: 0.3;
-}
-.boxtext{
-    position: absolute;
-    color: white;
-    bottom: 90px;
-    left: 10px;
-    max-width: 800px;
-}
-.boxtext h2{
-    font-size: 24px;
-    font-weight: 600;
-}
-.boxtext p{
-    margin-bottom: 40px;
-    font-size: 18px;
-    font-weight: 400;
-}
-
-.boxtext a {
-font-size: 18px;
-font-weight: 400;
-border-radius: 10px;
-background-color: #70c174;
-color: white;
-border: none;
-text-decoration: none;
-padding: 10px 20px;
-} */
 
 .d-block {
     max-width: 100%;
     height: 70vh;
 }
+#link-content{
+    text-decoration:none;
+    color: black;
+  }
 .navbar-style {
     padding-top: 5px;
 }
