@@ -1,3 +1,11 @@
+if (localStorage.getItem('roleUser')) {
+    if (localStorage.getItem("roleUser")!= 0) {
+        alert("anda bukan admin")
+        window.location.href = "index.html"
+    }
+}else{
+    window.location.href = "index.html"
+}
 const key = "https://634c991cf5d2cc648e90dc64.mockapi.io/gre/1/event"
 let namaEvent = document.getElementById('nama-event')
 let gambar = document.getElementById('gambar-event')
@@ -48,3 +56,8 @@ document.getElementById("form").addEventListener('submit',(eve)=>{
     }
     
 })
+function signOut() {
+    localStorage.setItem("indexLogin", 1);
+    window.location.href = "loginPage.html";
+    localStorage.removeItem("roleUser");
+  }
