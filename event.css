@@ -6,11 +6,11 @@
   text-decoration: none;
   scroll-behavior: smooth;
 }
-#body{
-    background-color: #EFF7F2;
+body {
+  background-color: #eff7f2;
 }
 
-.banner{
+.banner {
   overflow: hidden;
   max-width: 100%;
   position: relative;
@@ -30,18 +30,18 @@
   background-size: cover;
   opacity: 0.3;
 }
-.boxtext{
+.boxtext {
   position: absolute;
   color: white;
   bottom: 90px;
   left: 10px;
   max-width: 800px;
 }
-.boxtext h2{
+.boxtext h2 {
   font-size: 24px;
   font-weight: 600;
 }
-.boxtext p{
+.boxtext p {
   margin-bottom: 40px;
   font-size: 18px;
   font-weight: 400;
@@ -61,7 +61,7 @@
   color: black;
 }
 .search {
-    margin-top: 30px;
+  margin-top: 30px;
   padding: 20px;
 }
 .search h3 {
@@ -69,59 +69,71 @@
   margin: auto;
   margin-bottom: 20px;
 }
-.col-auto{
-  margin: 10px; 
+.col-auto {
+  margin: 10px;
   padding: 0;
 }
-.link{
-  text-decoration:none;
+.link {
+  text-decoration: none;
   color: black;
 }
-.link:hover{
-  text-decoration:none;
+.link:hover {
+  text-decoration: none;
   color: black;
 }
-.card{
-  width: 300px;height: 370px;
+.card {
+  width: 300px;
+  height: 370px;
 }
-.card-body{
+.card-body {
   height: 200px;
-  justify-content: space-between;padding: 2px 20px;text-align: center;
-}
-.date{
+  justify-content: space-between;
+  padding: 2px 20px;
   text-align: center;
 }
-.month{
+.date {
+  text-align: center;
+}
+.month {
   margin-bottom: 0;
-  font-size:16px;font-weight:500;color: blueviolet ;
+  font-size: 16px;
+  font-weight: 500;
+  color: blueviolet;
 }
-.dateNum{
+.dateNum {
   font-size: 24px;
-  font-weight:700 ;
+  font-weight: 700;
 }
-.desc{
-  margin-left:30px ;text-align:left;
+.desc {
+  margin-left: 30px;
+  text-align: left;
 }
-.card-title{
+.card-title {
   font-size: 16px;
   font-weight: 500;
 }
-.card-text{
-  
+.card-text {
   font-size: 15px;
   font-weight: 300;
+}
+nav {
+  background-color: #eff7f2;
+  padding-right: 95px;
+}
+a {
+  font-size: 20px;
 }
 .navbar-style {
   padding-top: 5px;
 }
 @media only screen and (max-width: 768px) {
-  .boxtext >p {
+  .boxtext > p {
     display: none;
   }
 }
 @media (max-width: 576px) {
   nav {
-      background-color:#EFF7F2;
-      padding: 0px 0px;
+    background-color: #eff7f2;
+    padding: 0px 0px;
   }
 }

@@ -117,6 +117,10 @@ a {
         display: flex;
         flex-direction: column;
     }
+    nav {
+      background-color:#EFF7F2;
+      padding: 0px 0px;
+  }
     
 }
 @media only screen and (min-width: 352px) {
