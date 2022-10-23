@@ -1,5 +1,3 @@
-
-
 document.getElementById("formulir").addEventListener('submit', (eve) => {
     eve.preventDefault()
     let gmail = document.getElementById("username").value

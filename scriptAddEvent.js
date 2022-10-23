@@ -58,6 +58,6 @@ document.getElementById("form").addEventListener('submit',(eve)=>{
 })
 function signOut() {
     localStorage.setItem("indexLogin", 1);
-    window.location.href = "loginPage.html";
+    location.reload();
     localStorage.removeItem("roleUser");
   }

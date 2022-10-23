@@ -15,6 +15,6 @@ if (localStorage.getItem("indexLogin") == 0) {
   
   function signOut() {
     localStorage.setItem("indexLogin", 1);
-    window.location.href = "loginPage.html";
+    location.reload();
     localStorage.removeItem("roleUser");
   }
