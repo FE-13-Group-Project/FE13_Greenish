@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #eff7f2;
+}
+
+.banner {
+  overflow: hidden;
+  max-width: 100%;
+  position: relative;
+  height: 40rem;
+  background-color: black;
+}
+.overlay-image {
+  max-width: 100%;
+  background-image: url("https://images.unsplash.com/photo-1618477461853-cf6ed80faba5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZW52aXJvbm1lbnRhbCUyMHN1c3RhaW5hYmlsaXR5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  position: absolute;
+  height: 40rem;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.3;
+}
+.boxtext {
+  position: absolute;
+  color: white;
+  bottom: 90px;
+  left: 10px;
+  max-width: 800px;
+}
+.boxtext h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.boxtext p {
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.boxtext a {
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 10px;
+  background-color: #70c174;
+  color: white;
+  border: none;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+.boxtext a:hover {
+  background-color: white;
+  color: black;
+}
+.search {
+  margin-top: 30px;
+  padding: 20px;
+}
+.search h3 {
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.col-auto {
+  margin: 10px;
+  padding: 0;
+}
+.link {
+  text-decoration: none;
+  color: black;
+}
+.link:hover {
+  text-decoration: none;
+  color: black;
+}
+.card {
+  width: 300px;
+  height: 370px;
+}
+.card-body {
+  height: 200px;
+  justify-content: space-between;
+  padding: 2px 20px;
+  text-align: center;
+}
+.date {
+  text-align: center;
+}
+.month {
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: blueviolet;
+}
+.dateNum {
+  font-size: 24px;
+  font-weight: 700;
+}
+.desc {
+  margin-left: 30px;
+  text-align: left;
+}
+.card-title {
+  font-size: 16px;
+  font-weight: 500;
+}
+.card-text {
+  font-size: 15px;
+  font-weight: 300;
+}
+nav {
+  background-color: #eff7f2;
+  padding-right: 95px;
+}
+a {
+  font-size: 20px;
+}
+.navbar-style {
+  padding-top: 5px;
+}
+@media only screen and (max-width: 768px) {
+  .boxtext > p {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  nav {
+    background-color: #eff7f2;
+    padding: 0px 0px;
+  }
+}
